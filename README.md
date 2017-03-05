@@ -1,7 +1,9 @@
 Accordion Plugin
 ===============
 
->jQuery accordion for use in the Squarespace CMS.
+>jQuery accordion for use in the Squarespace CMS.  
+
+This plugin requires the use of [Squarespace Developer Mode](https://developers.squarespace.com/quick-start/) and is subject to their [Developer Terms of Use](https://developers.squarespace.com/developer-terms-of-use).
 
 ### Usage
 
