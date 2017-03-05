@@ -1,0 +1,21 @@
+
+{# Title Area}
+<squarespace:block-field id="accordion-{collection.id}" label="Title Area" columns="12" />
+{# End Title Area}
+
+{# Accordion}
+<div class="accBlock">
+    <div class="expandingAcc">
+        {.repeated section items}
+        <div class="accElement">
+            <h4 class="accQuestion">
+                {title}
+            </h4>
+            <div class="accAnswer">
+                {body}
+            </div>
+        </div>
+        {.end}
+    </div>
+</div>
+{# End Accordion}
