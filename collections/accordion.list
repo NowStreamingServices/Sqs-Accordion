@@ -4,7 +4,7 @@
 {# End Title Area}
 
 {# Accordion}
-<div class="accBlock">
+<div id="accordion-content" class="accBlock">
     <div class="expandingAcc">
         {.repeated section items}
         <div class="accElement">
