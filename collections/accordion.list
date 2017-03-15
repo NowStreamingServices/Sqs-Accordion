@@ -7,7 +7,7 @@
 <div id="accordion-content" class="accBlock">
     <div class="expandingAcc">
         {.repeated section items}
-        <div class="accElement">
+        <div id="{id}" class="accElement">
             <h4 class="accQuestion">
                 {title}
             </h4>
