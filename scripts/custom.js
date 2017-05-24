@@ -1,19 +1,12 @@
-
-$(document).ready(function() {
+$( document ).ready( function() {
 
   //ACCORDION
-  $('.accQuestion').click(function() {
-    $parent_box = $(this).parent();
+  $( '.accQuestion' ).click( function() {
+    $parent_box = $( this ).parent();
+    $parent_box.find( '.accAnswer' ).toggleClass( 'activeAccAnswer' ); // Toggle accordion show/hide
+    $( this ).toggleClass( 'flipButton' ); // Toggle accordion show/hide icon
+    $( '.accQuestion' ).not( $( this ) ).removeClass( 'flipButton' ); // Hide other accordions
+    $( '.accQuestion' ).not( $( this ) ).next().removeClass( 'activeAccAnswer' ); // Hide other accordions
+  } );
 
-    // Toggle accordion show/hide
-    $parent_box.find('.accAnswer').toggleClass('activeAccAnswer');
-    $(this).toggleClass('flipButton');
-
-    // Hide other accordions
-    $('.accQuestion').not($(this)).removeClass('flipButton');
-    $('.accQuestion').not($(this)).next().removeClass('activeAccAnswer');
-
-  });
-  
-});
-
+} );
