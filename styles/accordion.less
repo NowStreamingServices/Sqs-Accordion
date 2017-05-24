@@ -1,13 +1,15 @@
-
 /* Mixins (If your site does not contain them already) */
+
 .transition(@transition) {
   -webkit-transition: @transition;
           transition: @transition;
 }
+
 .transform(@transform) {
   -wekbit-transform: @transform;
           transform: @transform;
 }
+
 
 /* ACCORDION TWEAKS */
 
@@ -26,7 +28,8 @@
 @accHeading4Color: #666666;
 
 // tweak: { "type" : "color", "category" : "Accordion", "title" : "Accordion Background Color", "label" : "Background Color", "target" : ".accElement", "showOnlyWhenPresent" : ".accElement" }
-@accBgColor: rgba(0,0,0,0);
+@accBgColor: rgba(0, 0, 0, 0);
+
 
 //ACCORDION STYLING
 .accElement {
@@ -36,6 +39,7 @@
   color: @accHeading4Color;
   background: @accBgColor;
 }
+
 .accQuestion {
   .accHeading4-font;
   color: @accHeading4Color;
@@ -43,7 +47,6 @@
   margin: 0;
   padding-right: 2em;
   padding-left: 12px;
-
   &:after {
     font-family: 'squarespace-ui-font';
     -webkit-font-smoothing: antialiased;
@@ -57,7 +60,6 @@
     cursor: pointer;
     .transition(transform 0.25s ease);
   }
-
   &.flipButton:after {
     .transform(rotate(270deg));
   }
@@ -70,7 +72,6 @@
   .transition(all 0.25s ease-out);
   padding-right: 2em;
   padding-left: 2em;
-
   .sqs-block {
     padding-top: 0;
     padding-bottom: 0;
@@ -81,4 +82,3 @@
   margin-top: 1.5em;
   max-height: none;
 }
-
