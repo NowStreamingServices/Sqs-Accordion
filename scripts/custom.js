@@ -1,5 +1,8 @@
 $( document ).ready( function() {
+  accInit();
+} );
 
+function accInit() {
   //ACCORDION
   $( '.accQuestion' ).click( function() {
     $parent_box = $( this ).parent();
@@ -8,5 +11,4 @@ $( document ).ready( function() {
     $( '.accQuestion' ).not( $( this ) ).removeClass( 'flipButton' ); // Hide other accordions
     $( '.accQuestion' ).not( $( this ) ).next().removeClass( 'activeAccAnswer' ); // Hide other accordions
   } );
-
-} );
+}
