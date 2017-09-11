@@ -5,17 +5,17 @@
 
 {# Accordion}
 <div id="accordion-content" class="accBlock">
-    <div class="expandingAcc">
-        {.repeated section items}
-        <div id="{id}" class="accElement">
-            <h4 class="accQuestion">
-                {title}
-            </h4>
-            <div class="accAnswer">
-                {body}
-            </div>
-        </div>
-        {.end}
+  <div class="expandingAcc">
+    {.repeated section items}
+    <div id="{id}" class="accElement">
+      <h4 class="accQuestion">
+        {title}
+      </h4>
+      <div class="accAnswer">
+        {body}
+      </div>
     </div>
+    {.end}
+  </div>
 </div>
 {# End Accordion}
