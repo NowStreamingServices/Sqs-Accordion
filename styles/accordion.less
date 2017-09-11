@@ -24,25 +24,27 @@
   text-transform: none;
 }
 
-// tweak: { "type" : "color", "category" : "Accordion", "title" : "Accordion Font Color", "label" : "Font Color", "target" : ".accQuestion", "showOnlyWhenPresent" : ".accElement" }
-@accHeading4Color: #666666;
+// tweak: { "type" : "color", "category" : "Accordion", "title" : "tweak-accordion-heading-color", "label" : "Font Color", "target" : ".accQuestion", "showOnlyWhenPresent" : ".accElement" }
+@tweak-accordion-heading-color: #666666;
 
-// tweak: { "type" : "color", "category" : "Accordion", "title" : "Accordion Background Color", "label" : "Background Color", "target" : ".accElement", "showOnlyWhenPresent" : ".accElement" }
-@accBgColor: rgba(0, 0, 0, 0);
+// tweak: { "type" : "color", "category" : "Accordion", "title" : "tweak-accordion-background", "label" : "Background Color", "target" : ".accElement", "showOnlyWhenPresent" : ".accElement" }
+@tweak-accordion-background: rgba(0, 0, 0, 0);
 
+// tweak: { "type" : "color", "category" : "Accordion", "title" : "tweak-accordion-line-color", "label" : "Line Color", "target" : ".accElement", "showOnlyWhenPresent" : ".accElement" }
+@tweak-accordion-line-color: #edeeee;
 
 //ACCORDION STYLING
 .accElement {
   padding: 2em 0;
-  border-bottom: 1px solid #EDEEEE;
+  border-bottom: 1px solid @tweak-accordion-line-color;
   position: relative;
-  color: @accHeading4Color;
-  background: @accBgColor;
+  color: @tweak-accordion-heading-color;
+  background: @tweak-accordion-background;
 }
 
 .accQuestion {
   .accHeading4-font;
-  color: @accHeading4Color;
+  color: @tweak-accordion-heading-color;
   cursor: pointer;
   margin: 0;
   padding-right: 2em;
